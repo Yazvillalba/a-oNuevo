@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
-body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,9,121,1) 52%, rgba(17,78,91,1) 100%);
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(99, 9, 121, 1) 52%, rgba(17, 78, 91, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,16 +13,20 @@ body{
     background-size: cover; */
     animation: slide-in-top 0.3s both;
 }
-*, *:after, *:before{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     -webkit-transition: all 100ms ease-in;
     transition: all 100ms ease-in;
-    
-  }
+
+}
+
 /* Feliz año nuevo */
-.feliz{
+.feliz {
     width: 100%;
     font-size: 4rem;
     color: white;
@@ -35,7 +40,7 @@ body{
 }
 
 /* NUMEROS */
-.anio-nuevo{ 
+.anio-nuevo {
     top: 0;
     left: 0;
     width: 100%;
@@ -47,11 +52,11 @@ body{
     align-items: center;
     overflow: hidden;
     /* padding: 5rem 0px 0px 0px; */
-    padding: 200px 100px 0px 0px;
+    padding: 200px 0px 0px 0px;
 
 }
 
-.anio-nuevo>span{ 
+.anio-nuevo>span {
     color: #715db9;
     font-family: Galada;
     /* font-size: 15rem; */
@@ -62,7 +67,8 @@ body{
     /* -webkit-box-reflect: below -150px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4)); */
 
 }
-span.tres{
+
+span.tres {
     /* position: absolute;
     top: 30%;
     right: 41%;
@@ -74,16 +80,18 @@ span.tres{
     margin-right: -200px;
     animation: subirNumTres 5s ease-in-out 5s forwards;
 }
-span.cuatro{
+
+span.cuatro {
     position: absolute;
     right: 0%;
-    margin-right: -173px; 
+    margin-right: -173px;
     /* margin-right: -307px; */
     /* animation: aparecerNumCuatro 8s ease-in-out forwards; */
     animation: aparecerNumCuatro 6s ease-in-out forwards;
 
 }
-span.cuatro:before{
+
+span.cuatro:before {
     content: '';
     width: 0px;
     height: 6px;
@@ -98,20 +106,22 @@ span.cuatro:before{
     z-index: -1;
     animation: entrega_balao 1s ease-in-out 4s;
 }
-.balao{
-  width: 100px;
-  height: 100px;
-  display: block;
-  background: #e8d57a;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  margin-top: -195px;
-  right: 0%;
-  margin-right: -200px;
-  animation: vem_e_vai_balao 10s ease-in-out forwards;
-  }
-  .balao:before{
+
+.balao {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: #e8d57a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -195px;
+    right: 0%;
+    margin-right: -200px;
+    animation: vem_e_vai_balao 10s ease-in-out forwards;
+}
+
+.balao:before {
     content: '';
     width: 0;
     height: 0;
@@ -123,8 +133,9 @@ span.cuatro:before{
     margin-left: -10px;
     bottom: -10px;
     z-index: -1;
-  }
-  .balao:after{
+}
+
+.balao:after {
     content: '';
     width: 4px;
     height: 100px;
@@ -135,59 +146,72 @@ span.cuatro:before{
     left: 50%;
     margin-left: -2px;
     bottom: -110px;
-  }
-   @keyframes aparecerNumCuatro {
+}
+
+@keyframes aparecerNumCuatro {
     0% {
         right: 0%;
-      }
-      66.6666% {
+    }
+
+    66.6666% {
         right: 50%;
         margin-right: -300px;
-      }
-      90% {
+    }
+
+    90% {
         right: 50%;
         margin-right: -300px;
-      }
-      100% {
+    }
+
+    100% {
         right: 50%;
-      }
-  }
-   @keyframes subirNumTres {
+    }
+}
+
+@keyframes subirNumTres {
     0% {
         top: 44%;
-      }
-      100% {
+    }
+
+    100% {
         top: -100%;
-      }
-  } 
-  @keyframes vem_e_vai_balao {
-    0% {
-      right: 0%;
     }
+}
+
+@keyframes vem_e_vai_balao {
+    0% {
+        right: 0%;
+    }
+
     40% {
-      right: 50%;
-      margin-right: -300px;
+        right: 50%;
+        margin-right: -300px;
     }
+
     50% {
-      right: 50%;
-      margin-right: -200px;
-      top: 50%;
+        right: 50%;
+        margin-right: -200px;
+        top: 50%;
     }
+
     100% {
-      top: -100%;
-      right: 50%;
+        top: -100%;
+        right: 50%;
     }
-  }
-  @keyframes entrega_balao {
+}
+
+@keyframes entrega_balao {
     0% {
-      transform: rotate(-30deg);
-      width: 40px;
+        transform: rotate(-30deg);
+        width: 40px;
     }
+
     100% {
-      transform: rotate(-150deg);
-      width: 80px;
+        transform: rotate(-150deg);
+        width: 80px;
     }
-  }
+}
+
 /*  
  
   @keyframes vem_feliz {
@@ -201,16 +225,103 @@ span.cuatro:before{
     }
   }   */
 
-  @media screen and (min-width: 670px) {
+@media screen and (min-width: 670px) {
+
     /* .feliz{
         font-size: 2.5rem;
     } */
-    .anio-nuevo>span{ 
-      
-         font-size: 10rem; 
-        
-    
-    
-    
+    .anio-nuevo>span {
+        font-size: 10rem;
+
     }
-  }
+}
+
+@media screen and (max-width: 669px) {
+    .anio-nuevo>span {
+        font-size: 5rem;
+
+    }
+    span.tres {
+    top: 56%;
+    margin-right: -104px;
+
+    }
+    span.cuatro{
+        margin-right: -103px;
+        animation: aparecerNumCuatro 7s ease-in-out forwards;
+
+    }
+    span.cuatro:before {
+        
+        top: 30px;
+        left: 10px;
+        animation: entrega_balao 1s ease-in-out 4s;
+
+    }
+    .balao {
+        margin-top: -155px;
+        margin-right: -104px;
+    }
+    @keyframes subirNumTres {
+        0% {
+            top: 56%;
+        }
+    
+        100% {
+            top: -100%;
+        }
+    }
+    @keyframes entrega_balao {
+        0% {
+            transform: rotate(-30deg);
+            width: 30px;
+        }
+    
+        100% {
+            transform: rotate(-130deg);
+            width: 35px;
+        }
+    }
+    @keyframes aparecerNumCuatro {
+        0% {
+            right: 0%;
+        }
+    
+        66.6666% {
+            right: 50%;
+            margin-right: -160px;
+        }
+    
+        90% {
+            right: 50%;
+            margin-right: -103px;
+        }
+    
+        100% {
+            right: 50%;
+        }
+    }
+    
+@keyframes vem_e_vai_balao {
+    0% {
+        right: 0%;
+    }
+
+    40% {
+        right: 50%;
+        margin-right: -220px;
+    }
+
+    50% {
+        right: 50%;
+        margin-right: -130px;
+        top: 50%;
+    }
+
+    100% {
+        top: -100%;
+        right: 50%;
+    }
+}
+
+}
