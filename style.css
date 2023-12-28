@@ -278,8 +278,8 @@ span.cuatro:before {
         }
     
         100% {
-            transform: rotate(-130deg);
-            width: 35px;
+            transform: rotate(-150deg);
+            width: 40px;
         }
     }
     @keyframes aparecerNumCuatro {
