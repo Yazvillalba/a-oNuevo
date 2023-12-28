@@ -200,3 +200,17 @@ span.cuatro:before{
       opacity: 1;
     }
   }   */
+
+  @media screen and (min-width: 670px) {
+    /* .feliz{
+        font-size: 2.5rem;
+    } */
+    .anio-nuevo>span{ 
+      
+         font-size: 10rem; 
+        
+    
+    
+    
+    }
+  }
