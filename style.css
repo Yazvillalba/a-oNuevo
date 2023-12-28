@@ -84,7 +84,7 @@ span.tres {
 span.cuatro {
     position: absolute;
     right: 0%;
-    margin-right: -173px;
+    margin-right: -204px;
     /* margin-right: -307px; */
     /* animation: aparecerNumCuatro 8s ease-in-out forwards; */
     animation: aparecerNumCuatro 6s ease-in-out forwards;
@@ -224,6 +224,162 @@ span.cuatro:before {
       opacity: 1;
     }
   }   */
+/* FOGOS */
+.fogos {
+    width: 90%;
+    height: 112%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.fogos>div {
+    border: 2px solid #fff;
+    position: absolute;
+    opacity: 0;
+    animation: solta_fogos 1.5s ease-in-out 8s forwards;
+}
+
+.fogos>div.f1 {
+    left: 37%;
+    top: 40%;
+}
+
+.fogos>div.f2 {
+    left: 27%;
+    top: 54%;
+}
+
+.fogos>div.f3 {
+    right: 27%;
+    top: 40%;
+}
+
+.fogos>div.f4 {
+    right: 17%;
+    top: 54%;
+}
+
+.fogos>div span {
+    width: 6px;
+    height: 6px;
+    display: inside;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: estoura_fogos 0.5s ease-in-out 9s forwards;
+}
+
+.fogos>div span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.fogos>div span:nth-child(2) {
+    transform: rotate(120deg);
+}
+
+.fogos>div span:nth-child(3) {
+    transform: rotate(240deg);
+}
+
+.fogos>div span:before {
+    content: '';
+    width: 2px;
+    height: 50px;
+    display: block;
+    background: #f5cc06;
+    position: absolute;
+    top: -60px;
+    left: 2px;
+}
+
+.fogos>div span:after {
+    content: '';
+    width: 2px;
+    height: 50px;
+    display: block;
+    background: #f5cc06;
+    position: absolute;
+    bottom: -60px;
+    left: 2px;
+}
+
+.fogos>div span i:before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+
+.fogos>div span i:after {
+    content: '';
+    width: 3px;
+    height: 3px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
+@keyframes solta_fogos {
+    0% {
+        margin-top: 100%;
+        opacity: 0;
+        width: 2px;
+        height: 30px;
+        display: block;
+        border-radius: 50%;
+    }
+
+    75% {
+        margin-top: 0%;
+        opacity: 1;
+        width: 2px;
+        height: 30px;
+        display: block;
+        border-radius: 50%;
+    }
+
+    80% {
+        margin-top: 0px;
+        margin-left: 0px;
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-radius: 50%;
+        transform: scale(0.2);
+    }
+
+    100% {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-radius: 50%;
+        transform: scale(1);
+    }
+}
+
+@keyframes estoura_fogos {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @media screen and (min-width: 670px) {
 
@@ -241,87 +397,100 @@ span.cuatro:before {
         font-size: 5rem;
 
     }
+
     span.tres {
-    top: 55%;
-    margin-right: -104px;
+        top: 55%;
+        margin-right: -104px;
 
     }
-    span.cuatro{
+
+    span.cuatro {
         margin-right: -103px;
         animation: aparecerNumCuatro 7s ease-in-out forwards;
 
     }
+
     span.cuatro:before {
-        
+
         top: 30px;
         left: 10px;
         animation: entrega_balao 1s ease-in-out 4s;
 
     }
+
     .balao {
         margin-top: -155px;
         margin-right: -104px;
     }
+
     @keyframes subirNumTres {
         0% {
             top: 56%;
         }
-    
+
         100% {
             top: -100%;
         }
     }
+
     @keyframes entrega_balao {
         0% {
             transform: rotate(-30deg);
             width: 30px;
         }
-    
+
         100% {
             transform: rotate(-150deg);
             width: 40px;
         }
     }
+
     @keyframes aparecerNumCuatro {
         0% {
             right: 0%;
         }
-    
+
         66.6666% {
             right: 50%;
             margin-right: -160px;
         }
-    
+
         90% {
             right: 50%;
             margin-right: -103px;
         }
-    
+
         100% {
             right: 50%;
         }
     }
-    
-@keyframes vem_e_vai_balao {
-    0% {
-        right: 0%;
+
+    @keyframes vem_e_vai_balao {
+        0% {
+            right: 0%;
+        }
+
+        40% {
+            right: 50%;
+            margin-right: -220px;
+        }
+
+        50% {
+            right: 50%;
+            margin-right: -130px;
+            top: 50%;
+        }
+
+        100% {
+            top: -100%;
+            right: 50%;
+        }
     }
 
-    40% {
-        right: 50%;
-        margin-right: -220px;
-    }
+    .fogos {
+        width: 100%;
+        
+        top: 25px;
 
-    50% {
-        right: 50%;
-        margin-right: -130px;
-        top: 50%;
     }
-
-    100% {
-        top: -100%;
-        right: 50%;
-    }
-}
-
 }
