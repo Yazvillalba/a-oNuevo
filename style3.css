@@ -293,23 +293,24 @@ span.cuatro:before {
 }
 
 .fogos>div.f1 {
-    left: 37%;
+    left: 32%;
     top: 40%;
 }
 
 .fogos>div.f2 {
-    left: 27%;
-    top: 54%;
+    left: 19%;
+    top: 57%;
 }
 
 .fogos>div.f3 {
-    right: 27%;
+    right: 24%;
     top: 40%;
 }
 
 .fogos>div.f4 {
     right: 17%;
-    top: 54%;
+    top: 60%;
+
 }
 
 .fogos>div span {
