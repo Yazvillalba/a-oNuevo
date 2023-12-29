@@ -96,9 +96,18 @@ body {
     text-align: center;
     position: absolute;
     font-family: Rubik Doodle Shadow;
-    top: 5rem;
+    top: 14rem;
     opacity: 0; 
     animation: vieneFeliz 2s ease-in-out 7s forwards;
+}
+.nombre{
+    width: 69%;
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-family: Rubik Doodle Shadow;
+    top: 3rem;
 }
 @keyframes vieneFeliz {
     0% {
@@ -116,7 +125,7 @@ body {
   }
 /* NUMEROS */
 .anio-nuevo {
-    top: 0;
+    top: 99px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -307,22 +316,22 @@ span.cuatro:before {
 
 .fogos>div.f1 {
     left: 32%;
-    top: 40%;
+    top: 45%;
 }
 
 .fogos>div.f2 {
     left: 19%;
-    top: 57%;
+    top: 63%;
 }
 
 .fogos>div.f3 {
     right: 24%;
-    top: 40%;
+    top: 42%;
 }
 
 .fogos>div.f4 {
     right: 17%;
-    top: 60%;
+    top: 72%;
 
 }
 
