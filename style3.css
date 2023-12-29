@@ -32,7 +32,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 28rem;
+    margin-bottom: 33rem;
 }
 
 .ball-wrapper {
@@ -55,7 +55,7 @@ body {
     width: 1.5px;
     position: relative;
     background-color: #f99d24;
-    height: 158px;
+    height: 180px;
     left: 50px;
     top: 12.4px;
     margin-top: -20px;
@@ -136,7 +136,7 @@ span.tres {
     margin-right: -200px;
     animation: subirNumTres 5s ease-in-out 5s forwards; */
     position: absolute;
-    top: 55%;
+    top: 54.5%;
     right: 50%;
     margin-right: -104px;
     animation: subirNumTres 5s ease-in-out 5s forwards;
