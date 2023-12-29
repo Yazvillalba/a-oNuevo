@@ -97,10 +97,23 @@ body {
     position: absolute;
     font-family: Rubik Doodle Shadow;
     top: 5rem;
-    /* opacity: 0; */
-    animation: vem_feliz 2s ease-in-out 7s forwards;
+    opacity: 0; 
+    animation: vieneFeliz 2s ease-in-out 7s forwards;
 }
-
+@keyframes vieneFeliz {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 0;
+    }
+    25% {
+      transform: translateY(-25px) scale(1.2);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(+50px) scale(1);
+      opacity: 1;
+    }
+  }
 /* NUMEROS */
 .anio-nuevo {
     top: 0;
